@@ -41,7 +41,6 @@ body {
 
 .star {
   color: var(--fourth-color);
-  margin-right: 8px;
 }
 
 .rating-star-container {
@@ -107,6 +106,10 @@ body {
   border: none;
   outline: none;
   margin-left: 6px;
+}
+
+.bold-search-value {
+  font-weight: bold;
 }
 
 /**********REVIEW COMPONENT**********/
@@ -203,13 +206,15 @@ body {
 }
 
 .angle-right-list {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
   background: transparent;
 }
 
 .angle-right-icon {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   border: 1px solid var(--fourth-color);
   border-radius: 16px;
@@ -224,16 +229,24 @@ body {
   background: transparent;
 }
 
+.angle-right-carrot {
+  height: 100%;
+}
+
 .ul-padding {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .rating-container-half {
   display: flex;
   justify-content: space-between;
   flex: 1 0 auto;
+  padding-right: 2rem;
 }
+
+/*.rating-container-half:nth-child(1) {
+  padding-right: 2rem;
+}*/
 
 .rating-text-half {
   margin-right: 1rem;

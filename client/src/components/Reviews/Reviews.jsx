@@ -206,9 +206,12 @@ class Reviews extends Component {
     if (searchValue === '') {
       return;
     }
+
+    const searchReviews = tempAllReviews
+      .filter(review => review.review_text.includes(searchValue));
+
     this.setState({
-      reviews: tempAllReviews
-        .filter(review => review.review_text.includes(searchValue)),
+      reviews: searchReviews,
       showBackToReviews: true,
     });
   }
@@ -241,9 +244,8 @@ class Reviews extends Component {
       reviews: reviewsByPage[Number(e.currentTarget.textContent)],
       pageClass: 'selected-page',
     });
-    window.scrollBy({
-      top: -400,
-      left: 0,
+
+    document.querySelector('.rating-container').scrollIntoView({
       behavior: 'smooth',
     });
   }
@@ -262,9 +264,7 @@ class Reviews extends Component {
         selectedPage: selectedPage + 1,
         reviews: reviewsByPage[selectedPage + 1],
       });
-      window.scrollBy({
-        top: -400,
-        left: 0,
+      document.querySelector('.rating-container').scrollIntoView({
         behavior: 'smooth',
       });
     }
@@ -277,9 +277,7 @@ class Reviews extends Component {
         selectedPage: selectedPage - 1,
         reviews: reviewsByPage[selectedPage - 1],
       });
-      window.scrollBy({
-        top: -400,
-        left: 0,
+      document.querySelector('.rating-container').scrollIntoView({
         behavior: 'smooth',
       });
     }
