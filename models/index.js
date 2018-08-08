@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = process.env.MONGODB_URI || 'mongodb://database:27017/airfec-reviews';
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/airfec-reviews';
 // database:27017
 // localhost
 mongoose.connect(dbURI);
