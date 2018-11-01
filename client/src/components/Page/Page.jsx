@@ -17,8 +17,8 @@ const Page = ({ handleReviewsSelected, pageNum, active }) => {
 };
 
 Page.propTypes = {
-  handleReviewsSelected: PropTypes.func.isRequired,
-  pageNum: PropTypes.string.isRequired,
+  handleReviewsSelected: PropTypes.func,
+  pageNum: PropTypes.string,
   active: PropTypes.bool.isRequired,
 };
 

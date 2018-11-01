@@ -29,7 +29,7 @@ const Pagination = ({
           {selectedPage < numOfPages ? (
             <li className="angle-right-list">
               <button type="button" className="angle-right-icon" onClick={handleRightArrow}>
-                <FontAwesome name="angle-right" />
+                <FontAwesome name="angle-right" className="angle-right-carrot" />
               </button>
             </li>) : null}
         </ul>
