@@ -11,13 +11,8 @@
 
 ## Table of Contents
 
-1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
-
-## Usage
-
-> Visit a deployed version here: http://ec2-54-183-129-30.us-west-1.compute.amazonaws.com/rooms/86
 
 ## Technology stack
 
